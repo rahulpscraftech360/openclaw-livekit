@@ -294,7 +294,7 @@ D:\openclaw\
       "Implement entrypoint with room join and session start logic",
       "Test with 'uv run agent.py console' to verify text-based interaction works"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": 5,

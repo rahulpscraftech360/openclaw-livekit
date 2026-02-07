@@ -2,8 +2,8 @@
 
 ## Current Status
 **Last Updated:** 2026-02-07
-**Tasks Completed:** 3
-**Current Task:** Task 3 complete
+**Tasks Completed:** 4
+**Current Task:** Task 4 complete
 
 ---
 
@@ -53,3 +53,20 @@ Each entry should include:
   - `uv run python -c "from plugins.edge_tts_plugin import *"` — imports successfully
 - **Screenshot:** N/A (backend plugin, no UI)
 - **Issues:** Initial import failed because `DEFAULT_API_CONNECT_OPTIONS` is in `livekit.agents.types`, not `livekit.agents.tts`. Fixed the import path.
+
+### 2026-02-07 — Task 4: Build the main LiveKit agent with OpenClaw integration
+- **Task:** Build the main LiveKit agent with OpenClaw integration
+- **Changes made:**
+  - Created `agent.py` at project root
+  - Loads environment variables from `.env.local` using `python-dotenv`
+  - Configures Deepgram STT with Nova-3 model
+  - Configures OpenAI-compatible LLM plugin pointing to OpenClaw gateway (`OPENCLAW_BASE_URL`)
+  - Configures custom Edge TTS plugin from `plugins/edge_tts_plugin.py`
+  - Configures Silero VAD (prewarmed in `prewarm()` function)
+  - Creates `AgentSession` wiring STT, LLM, TTS, VAD with turn detection set to "vad"
+  - System instructions set for personal assistant persona
+  - Entrypoint connects to room and starts session
+- **Commands run:**
+  - `uv run python -c "import agent"` — imports successfully
+- **Screenshot:** N/A (backend agent, no UI yet)
+- **Issues:** None
