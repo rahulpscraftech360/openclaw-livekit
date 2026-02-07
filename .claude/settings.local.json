@@ -6,7 +6,16 @@
       "WebFetch(domain:clawctl.com)",
       "WebFetch(domain:docs.openclaw.ai)",
       "WebFetch(domain:docs.livekit.io)",
-      "WebFetch(domain:deepwiki.com)"
+      "WebFetch(domain:deepwiki.com)",
+      "Bash(dir:*)",
+      "Bash(findstr:*)",
+      "Bash(where:*)",
+      "Bash(netstat:*)",
+      "Bash(openclaw --version:*)",
+      "Bash(taskkill:*)",
+      "Bash(openclaw gateway reload:*)",
+      "Bash(openclaw reload:*)",
+      "Bash(openclaw config reload:*)"
     ]
   }
 }
