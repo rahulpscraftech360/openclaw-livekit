@@ -309,7 +309,7 @@ D:\openclaw\
       "Add CORS headers (Access-Control-Allow-Origin: *) for browser access",
       "Test by running 'uv run token_server.py' and curling http://localhost:8081/token"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": 6,

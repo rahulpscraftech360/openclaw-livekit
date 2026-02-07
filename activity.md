@@ -2,8 +2,8 @@
 
 ## Current Status
 **Last Updated:** 2026-02-07
-**Tasks Completed:** 4
-**Current Task:** Task 4 complete
+**Tasks Completed:** 5
+**Current Task:** Task 5 complete
 
 ---
 
@@ -69,4 +69,18 @@ Each entry should include:
 - **Commands run:**
   - `uv run python -c "import agent"` — imports successfully
 - **Screenshot:** N/A (backend agent, no UI yet)
+- **Issues:** None
+
+### 2026-02-07 — Task 5: Build the token server for LiveKit room access
+- **Task:** Build the token server for LiveKit room access
+- **Changes made:**
+  - Created `token_server.py` with aiohttp HTTP server on port 8081
+  - Implements `GET /token` endpoint that generates a LiveKit access token with room join permission
+  - Uses `livekit.api.AccessToken` and `VideoGrants` for token generation
+  - CORS headers added via middleware for browser access
+  - Configurable via environment variables (LIVEKIT_API_KEY, LIVEKIT_API_SECRET, LIVEKIT_URL)
+  - Default room name: `openclaw-voice`
+- **Commands run:**
+  - `uv run python -c "import token_server"` — imports successfully
+- **Screenshot:** N/A (backend server, no UI)
 - **Issues:** None
