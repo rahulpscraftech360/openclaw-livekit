@@ -261,7 +261,7 @@ D:\openclaw\
       "Add EDGE_TTS_VOICE=en-US-AriaNeural",
       "Create or update .gitignore to include .env.local, .env, __pycache__/, .venv/, *.pyc"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": 3,
