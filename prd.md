@@ -340,7 +340,7 @@ D:\openclaw\
       "Update UI state indicators based on agent data messages or track state",
       "Implement optional transcript display by listening for agent text events"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": 8,
